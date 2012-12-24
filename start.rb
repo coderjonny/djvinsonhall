@@ -5,7 +5,7 @@ require 'instagram'
 
 enable :sessions
 
-CALLBACK_URL = "http://localhost:4567/oauth/callback"
+CALLBACK_URL = "http://djvinsonhall.herokuapp.com/oauth/callback"
 
 set :haml, {:format  => :html5}
 set :root, File.dirname(__FILE__)
