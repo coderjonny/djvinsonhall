@@ -1,9 +1,9 @@
 body {
-  background: #ccc;
+  background: url('/images/gray_jean/gray_jean.png');
 }
 
 .mainheader {
-  color: white;
+  color: #444;
   font-size: 80px;
   font-weight: 100;
 }
@@ -15,4 +15,12 @@ body {
   line-height: 60px;
   margin-left: -25px;
   text-align: right;
+}
+
+.tweet {
+  font: inherit !important;
+}
+
+.panel {
+  background: #bbb;
 }

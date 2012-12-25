@@ -12,7 +12,29 @@
     / Included CSS Files
     %link{:href => "stylesheets/app.css", :rel => "stylesheet"}
     %link{:href => "stylesheets/vinny.css", :rel => "stylesheet"}
-      %script{:src => "javascripts/foundation/modernizr.foundation.js"}
+    %script{:src => "javascripts/foundation/modernizr.foundation.js"}
+    <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+    -#tweet stuff
+    <script language="javascript" src="http://tweet.seaofclouds.com/jquery.tweet.js" type="text/javascript"></script>
+    <link href="http://tweet.seaofclouds.com/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
+  :javascript
+    jQuery(function($){
+        $(".tweet").tweet({
+            username: "vinson_hall",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 3,
+            auto_join_text_default: "we said,",
+            auto_join_text_ed: "we",
+            auto_join_text_ing: "we were",
+            auto_join_text_reply: "we replied to",
+            auto_join_text_url: "we were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
+
+
   %body
     .row
       .twelve.columns
@@ -30,9 +52,11 @@
         / Grid Example
         .row
           .eleven.columns
+            %h3.tweet
+        .row
+          .eleven.columns
             .panel
-              -@recent.each do |x|
-                %img{src: x}
+              %img{src: 'http://distilleryimage2.s3.amazonaws.com/aae0e2a44d6111e2a2e222000a9e48a3_7.jpg'}
 
       .three.columns
         %ul.disc
@@ -50,7 +74,7 @@
               %a{:href => "#simple1"} Tour Dates
           %ul.tabs-content
             %li#simple1Tab.active
-              Dec. 22nd @ Avalon
+              %a{:href => 'https://www.facebook.com/events/466111920093524/?fref=ts'}Dec. 22nd @ Avalon
 
     / Included JS Files (Uncompressed)
     %script{:src => "javascripts/foundation/jquery.js"}

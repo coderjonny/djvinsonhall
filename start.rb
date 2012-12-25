@@ -27,12 +27,12 @@ get '/stylesheets/:name.css' do
 end
 
 get '/' do
-  client = Instagram.client(:access_token => session[:access_token])
-  @user = client.user.profile_picture
-  @recent = []
-  for media_item in client.user_recent_media(245080958)
-    @recent << media_item.images.thumbnail.url
-  end
+  #client = Instagram.client(:access_token => session[:access_token])
+  #@user = client.user.profile_picture
+  #@recent = []
+  #for media_item in client.user_recent_media(245080958)
+    #@recent << media_item.images.thumbnail.url
+  #end
 
   haml :index
 end
@@ -51,7 +51,6 @@ get "/feed" do
   client = Instagram.client(:access_token => session[:access_token])
   user = client.user
 
-  html = "<h1>#{user}'s recent photos</h1>"
   for media_item in client.user_recent_media(245080958)
     html << "<img src='#{media_item.images.thumbnail.url}'>"
   end
