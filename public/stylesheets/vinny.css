@@ -3,14 +3,14 @@ body {
   background: url("/images/gray_jean/gray_jean.png");
 }
 
-/* line 5, ../../views/stylesheets/vinny.scss */
+/* line 4, ../../views/stylesheets/vinny.scss */
 .mainheader {
   color: #444;
   font-size: 80px;
   font-weight: 100;
 }
 
-/* line 11, ../../views/stylesheets/vinny.scss */
+/* line 10, ../../views/stylesheets/vinny.scss */
 .social_links {
   font-size: 60px;
   font-weight: 100;
@@ -19,29 +19,29 @@ body {
   margin-left: -25px;
   text-align: right;
 }
-/* line 18, ../../views/stylesheets/vinny.scss */
+/* line 17, ../../views/stylesheets/vinny.scss */
 .social_links:hover {
   font-weight: 300;
 }
-/* line 21, ../../views/stylesheets/vinny.scss */
+/* line 20, ../../views/stylesheets/vinny.scss */
 .social_links.tour {
   border-bottom: 1px solid #aaaaaa;
   color: #00C708;
   clear: both;
 }
-/* line 25, ../../views/stylesheets/vinny.scss */
+/* line 24, ../../views/stylesheets/vinny.scss */
 .social_links.tour a {
   color: inherit;
   clear: both;
   display: block;
   float: right;
 }
-/* line 31, ../../views/stylesheets/vinny.scss */
+/* line 30, ../../views/stylesheets/vinny.scss */
 .social_links.tour:hover {
   font-weight: 100;
 }
 
-/* line 37, ../../views/stylesheets/vinny.scss */
+/* line 36, ../../views/stylesheets/vinny.scss */
 .tour_details {
   font-size: 22px;
   font-weight: 200;
@@ -50,18 +50,30 @@ body {
   list-style: none;
   padding-bottom: 20px;
 }
-/* line 44, ../../views/stylesheets/vinny.scss */
+/* line 43, ../../views/stylesheets/vinny.scss */
 .tour_details:hover {
   font-weight: 500;
 }
 
-/* line 49, ../../views/stylesheets/vinny.scss */
+/* line 48, ../../views/stylesheets/vinny.scss */
 .tweet {
   font: inherit !important;
 }
 
-/* line 53, ../../views/stylesheets/vinny.scss */
+/* line 52, ../../views/stylesheets/vinny.scss */
 .panel {
   border-radius: 6px;
   background: #c2c2c2;
+}
+
+@media screen and (max-width: 500px) {
+  /* line 58, ../../views/stylesheets/vinny.scss */
+  .mainheader {
+    font-size: 60px;
+  }
+
+  /* line 61, ../../views/stylesheets/vinny.scss */
+  .social_links {
+    font-size: 50px;
+  }
 }

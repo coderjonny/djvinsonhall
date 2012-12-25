@@ -1,7 +1,6 @@
 body {
   background: url('/images/gray_jean/gray_jean.png');
 }
-
 .mainheader {
   color: #444;
   font-size: 80px;
@@ -53,4 +52,13 @@ body {
 .panel {
   border-radius: 6px;
   background: #c2c2c2;
+}
+
+@media screen and (max-width: 500px) {
+  .mainheader {
+    font-size: 60px;
+  }
+  .social_links {
+    font-size: 50px;
+  }
 }
