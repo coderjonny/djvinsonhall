@@ -19,13 +19,49 @@ body {
   margin-left: -25px;
   text-align: right;
 }
+/* line 18, ../../views/stylesheets/vinny.scss */
+.social_links:hover {
+  font-weight: 300;
+}
+/* line 21, ../../views/stylesheets/vinny.scss */
+.social_links.tour {
+  border-bottom: 1px solid #aaaaaa;
+  color: #00C708;
+  clear: both;
+}
+/* line 25, ../../views/stylesheets/vinny.scss */
+.social_links.tour a {
+  color: inherit;
+  clear: both;
+  display: block;
+  float: right;
+}
+/* line 31, ../../views/stylesheets/vinny.scss */
+.social_links.tour:hover {
+  font-weight: 100;
+}
 
-/* line 20, ../../views/stylesheets/vinny.scss */
+/* line 37, ../../views/stylesheets/vinny.scss */
+.tour_details {
+  font-size: 22px;
+  font-weight: 200;
+  clear: both;
+  float: right;
+  list-style: none;
+  padding-bottom: 20px;
+}
+/* line 44, ../../views/stylesheets/vinny.scss */
+.tour_details:hover {
+  font-weight: 500;
+}
+
+/* line 49, ../../views/stylesheets/vinny.scss */
 .tweet {
   font: inherit !important;
 }
 
-/* line 24, ../../views/stylesheets/vinny.scss */
+/* line 53, ../../views/stylesheets/vinny.scss */
 .panel {
-  background: #bbb;
+  border-radius: 6px;
+  background: #c2c2c2;
 }

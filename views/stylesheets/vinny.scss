@@ -15,6 +15,35 @@ body {
   line-height: 60px;
   margin-left: -25px;
   text-align: right;
+  &:hover {
+    font-weight: 300;
+  }
+  &.tour {
+    border-bottom: 1px solid #AAA;
+    color: #00C708;
+    clear: both;
+    a {
+      color: inherit;
+      clear: both;
+      display: block;
+      float: right;
+    }
+    &:hover {
+      font-weight: 100;
+    }
+  }
+}
+
+.tour_details {
+  font-size: 22px;
+  font-weight: 200;
+  clear: both;
+  float: right;
+  list-style: none;
+  padding-bottom: 20px;
+  &:hover {
+    font-weight: 500;
+  }
 }
 
 .tweet {
@@ -22,5 +51,6 @@ body {
 }
 
 .panel {
-  background: #bbb;
+  border-radius: 6px;
+  background: #c2c2c2;
 }

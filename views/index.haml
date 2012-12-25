@@ -52,11 +52,12 @@
         / Grid Example
         .row
           .eleven.columns
-            %h3.tweet
+            .panel
+              %img{src: 'http://distilleryimage2.s3.amazonaws.com/aae0e2a44d6111e2a2e222000a9e48a3_7.jpg'}
         .row
           .eleven.columns
             .panel
-              %img{src: 'http://distilleryimage2.s3.amazonaws.com/aae0e2a44d6111e2a2e222000a9e48a3_7.jpg'}
+              %h3.tweet
 
       .three.columns
         %ul.disc
@@ -66,15 +67,10 @@
             %a{:href => "http://instagram.com/vinson_hall"} instagram
           %li.social_links
             %a{:href => "http://twitter.com/vinson_hall"} twitter
-
-      .three.columns
-        %h3
-          %dl.tabs
-            %dd.active
-              %a{:href => "#simple1"} Tour Dates
-          %ul.tabs-content
-            %li#simple1Tab.active
-              %a{:href => 'https://www.facebook.com/events/466111920093524/?fref=ts'}Dec. 22nd @ Avalon
+          %li.social_links.tour
+            tour
+          %li.tour_details
+            %a{:href => 'https://www.facebook.com/events/466111920093524/?fref=ts'}Dec. 22nd @ Avalon
 
     / Included JS Files (Uncompressed)
     %script{:src => "javascripts/foundation/jquery.js"}
