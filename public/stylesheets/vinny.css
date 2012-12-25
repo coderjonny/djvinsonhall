@@ -56,23 +56,28 @@ body {
 }
 
 /* line 48, ../../views/stylesheets/vinny.scss */
+.tweet_time {
+  margin-right: 10px;
+}
+
+/* line 52, ../../views/stylesheets/vinny.scss */
 .tweet {
   font: inherit !important;
 }
 
-/* line 52, ../../views/stylesheets/vinny.scss */
+/* line 56, ../../views/stylesheets/vinny.scss */
 .panel {
   border-radius: 6px;
   background: #c2c2c2;
 }
 
 @media screen and (max-width: 500px) {
-  /* line 58, ../../views/stylesheets/vinny.scss */
+  /* line 62, ../../views/stylesheets/vinny.scss */
   .mainheader {
     font-size: 60px;
   }
 
-  /* line 61, ../../views/stylesheets/vinny.scss */
+  /* line 65, ../../views/stylesheets/vinny.scss */
   .social_links {
     font-size: 50px;
   }
